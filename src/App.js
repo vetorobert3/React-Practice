@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 import Navbar from './components/layout/Navbar';
 import Joke from './components/Joke';
+import About from './components/Pages/About';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Navbar />
         <div className='container mx-auto'>
           <Route path="/" exact component={Joke} />
+          <Route path="/about" exact component={About} />
         </div> 
       </div>
     </Router>
